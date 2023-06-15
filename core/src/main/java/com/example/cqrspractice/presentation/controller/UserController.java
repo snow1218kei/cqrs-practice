@@ -3,7 +3,7 @@ package com.example.cqrspractice.presentation.controller;
 import com.example.cqrspractice.application.UserService;
 import com.example.cqrspractice.domain.UserEntity;
 import com.example.cqrspractice.infrastructure.UserQuery;
-import com.example.cqrspractice.infrastructure.datamodel.User;
+import com.example.cqrspractice.infrastructure.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

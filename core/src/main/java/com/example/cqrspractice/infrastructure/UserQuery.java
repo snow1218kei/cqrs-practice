@@ -1,14 +1,15 @@
 package com.example.cqrspractice.infrastructure;
 
-import com.example.cqrspractice.infrastructure.datamodel.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
+@Repository
 public class UserQuery {
     private final JdbcTemplate jdbcTemplate;
 

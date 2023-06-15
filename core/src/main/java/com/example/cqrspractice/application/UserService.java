@@ -1,8 +1,7 @@
 package com.example.cqrspractice.application;
 
 import com.example.cqrspractice.domain.UserEntity;
-import com.example.cqrspractice.domain.UserRepository;
-import com.example.cqrspractice.infrastructure.datamodel.User;
+import com.example.cqrspractice.infrastructure.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +10,7 @@ public class UserService {
     private final UserRepository userRepository;
 
     @Autowired
-    public UserService(UserRepository userRepository) {
+    public <UserRepository> UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 

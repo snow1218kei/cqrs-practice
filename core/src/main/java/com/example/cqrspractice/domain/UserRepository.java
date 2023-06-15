@@ -1,8 +1,9 @@
 package com.example.cqrspractice.domain;
 
-import com.example.cqrspractice.infrastructure.datamodel.User;
-import org.springframework.data.jpa.repository.JpaRepository;
+import com.example.cqrspractice.infrastructure.User;
 
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface UserRepository {
     User findByEmail(String email);
+
+    void save(User user);
 }
